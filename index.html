@@ -1,13 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href=".\style.css"> 
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Secundus: Full-Stack Challenge</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://kit.fontawesome.com/a2e0fc2b34.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <h1>This is a test</h1>
-    <p> hello </p>
+  <header class="navbar">
+    <div class="navbar-content">
+      <h1 class="logo">Secundus Project: Zakwaan</h1>
+      <button class="mode-toggle" onclick="toggleDarkMode()">
+        <i class="fas fa-moon"></i>
+      </button>
+    </div>
+  </header>
+
+  <section class="hero">
+    <h2>
+      Is it realistic for a complete beginner to earn money through building a
+      full-stack web application using only free resources?
+    </h2>
+    <p>This is my journey to find out — documented in real-time.</p>
+  </section>
+
+  <main class="container">
+    <!-- New Project Categories Section -->
+    <section class="project-categories">
+      <h3><i class="fas fa-code"></i> Project Categories</h3>
+
+      <div class="category">
+        <button class="category-btn" onclick="toggleDropdown(this)">
+          HTML <i class="fas fa-chevron-down arrow"></i>
+        </button>
+        <ul class="dropdown-list">
+          <li><a href="project1.html">Beginner HTML</a></li>
+          <li><a href="#">Intermediate HTML</a></li>
+          <li><a href="#">Advanced HTML</a></li>
+        </ul>
+      </div>
+
+      <div class="category">
+        <button class="category-btn" onclick="toggleDropdown(this)">
+          CSS <i class="fas fa-chevron-down arrow"></i>
+        </button>
+        <ul class="dropdown-list">
+          <li><a href="#">Beginner CSS</a></li>
+          <li><a href="#">Intermediate CSS</a></li>
+          <li><a href="#">Advanced CSS</a></li>
+        </ul>
+      </div>
+
+      <div class="category">
+        <button class="category-btn" onclick="toggleDropdown(this)">
+          JavaScript <i class="fas fa-chevron-down arrow"></i>
+        </button>
+        <ul class="dropdown-list">
+          <li><a href="#">Beginner JavaScript</a></li>
+          <li><a href="#">Intermediate JavaScript</a></li>
+          <li><a href="#">Advanced JavaScript</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="roadmap">
+      <h3><i class="fas fa-map"></i> Roadmap</h3>
+      <ul>
+        <li>Learn beginner HTML/CSS</li>
+        <li>Learn beginner JavaScript</li>
+        <li>Improve HTML, CSS and JavaScript</li>
+        <li>Build a simple full-stack webpage</li>
+        <li>Search for freelance jobs</li>
+        <li>Hopefully make money???</li>
+      </ul>
+    </section>
+
+    <section class="resources">
+      <h3><i class="fas fa-book"></i> Resources Used</h3>
+      <ul>
+        <li><strong>Webpage:</strong> FreeCodeCamp, MDN, Youtube Tutorials</li>
+        <li><strong>Deployment:</strong> GitHub Pages</li>
+      </ul>
+    </section>
+
+    <section class="logs">
+      <h3><i class="fas fa-pen"></i> Project Diary</h3>
+      <article>
+        <h4>Week 1: Learning HTML</h4>
+        <p>Started with a Youtube Tutorial. Built my first webpage. It felt awesome!!.</p>
+      </article>
+      <article>
+        <h4>Week 4: Connected a backend</h4>
+        <p>Used Firebase to store user data. Took time to understand security rules.</p>
+      </article>
+    </section>
+
+    <section class="reflections">
+      <h3><i class="fas fa-lightbulb"></i> Lessons & Reflections</h3>
+      <ul>
+        <li>Motivation is hardest when there is no feedback</li>
+        <li>Free tools are powerful, but scattered</li>
+        <li>Time &gt; Tools — consistency matters most</li>
+      </ul>
+    </section>
+  </main>
+  <script src="script.js"></script>
 </body>
 </html>
