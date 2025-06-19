@@ -1,10 +1,10 @@
 // Cat Gallery Logic
 const catImages = [
-  "https://picsum.photos/id/237/200/200", // looks like a cat
-  "https://picsum.photos/id/1025/200/200",
-  "https://picsum.photos/id/1005/200/200",
-  "https://picsum.photos/id/1006/200/200",
-  "https://picsum.photos/id/1003/200/200"
+  "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Felis_catus-cat_on_snow.jpg/640px-Felis_catus-cat_on_snow.jpg", // looks like a cat
+  "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Felis_silvestris_catus_%28Brunei%29_02.jpg/640px-Felis_silvestris_catus_%28Brunei%29_02.jpg",
+  "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/20231125_housecat_south_meadows_PD100306.jpg/640px-20231125_housecat_south_meadows_PD100306.jpg",
+  "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Felis_silvestris_catus.008_-_A_Coru%C3%B1a.jpg/640px-Felis_silvestris_catus.008_-_A_Coru%C3%B1a.jpg",
+  "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Felis_silvestris_catus_%28Berlioz%29.JPG/640px-Felis_silvestris_catus_%28Berlioz%29.JPG"
 ];
 
 let currentIndex = 0;
@@ -31,9 +31,9 @@ const moodImage = document.getElementById("moodImage");
 const moodText = document.getElementById("moodText");
 
 const moods = {
-  happy: "https://picsum.photos/id/237/200/200",
-  grumpy: "https://picsum.photos/id/1025/200/200",
-  curious: "https://picsum.photos/id/1003/200/200"
+  happy: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/So_happy_smiling_cat.jpg/640px-So_happy_smiling_cat.jpg",
+  grumpy: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Grumpy_Cat_%2814556024763%29_%28cropped%29.jpg/640px-Grumpy_Cat_%2814556024763%29_%28cropped%29.jpg",
+  curious: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Curious_Cat_-_geograph.org.uk_-_873264_2008_%28cropped%29.jpg/640px-Curious_Cat_-_geograph.org.uk_-_873264_2008_%28cropped%29.jpg"
 };
 
 moodSelector.addEventListener("change", () => {
