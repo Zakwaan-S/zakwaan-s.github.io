@@ -1,0 +1,146 @@
+/* Advanced CSS Project Styles */
+
+:root {
+  --bg: #0f2027;
+  --bg-gradient: linear-gradient(to right, #2c5364, #203a43, #0f2027);
+  --text-color: #f0f0f0;
+  --accent: #76e2f7;
+  --glass-bg: rgba(255, 255, 255, 0.1);
+  --glass-blur: blur(8px);
+  --font: 'Montserrat', sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font);
+  background: var(--bg-gradient);
+  color: var(--text-color);
+  scroll-behavior: smooth;
+}
+
+.glass-header {
+  background: var(--glass-bg);
+  backdrop-filter: var(--glass-blur);
+  text-align: center;
+  padding: 3rem 1rem;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+.glass-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  color: var(--accent);
+}
+
+.sticky-nav {
+  position: sticky;
+  top: 0;
+  background: #1a1a1a;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 1rem;
+  z-index: 1000;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.5);
+}
+
+.sticky-nav a {
+  color: var(--text-color);
+  text-decoration: none;
+  font-weight: bold;
+  position: relative;
+}
+
+.sticky-nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  height: 2px;
+  width: 0%;
+  background-color: var(--accent);
+  transition: width 0.3s ease-in-out;
+}
+
+.sticky-nav a:hover::after {
+  width: 100%;
+}
+
+.section {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.dark-gradient {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+  margin: 2rem auto;
+  max-width: 800px;
+}
+
+ul {
+  list-style: square inside;
+  font-size: 1.1rem;
+  color: #ddd;
+}
+
+.fade-section {
+  animation: fadeIn 2s ease-in;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  margin: 1rem;
+  display: inline-block;
+  background: var(--accent);
+  border-radius: 12px;
+}
+
+.spin {
+  animation: spin 4s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0); }
+  100% { transform: rotate(360deg); }
+}
+
+.bounce {
+  animation: bounce 1s infinite alternate;
+}
+
+@keyframes bounce {
+  from { transform: translateY(0); }
+  to { transform: translateY(-30px); }
+}
+
+.grid-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 2rem;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.footer {
+  text-align: center;
+  padding: 2rem;
+  background: #111;
+  color: #aaa;
+  font-size: 0.9rem;
+  margin-top: 2rem;
+}

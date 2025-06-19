@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Intermediate JavaScript - Cat World</title>
+  <link rel="stylesheet" href="style-intermediate-js.css" />
+</head>
+<body>
+  <header>
+    <h1> Cat World</h1>
+  </header>
+
+  <main>
+    <!-- Cat Gallery -->
+    <section>
+      <h2>Cat Gallery</h2>
+      <div class="cat-gallery" id="catGallery"></div>
+      <button id="loadCats">Load More Cats</button>
+    </section>
+
+    <!-- Mood Changer -->
+    <section>
+      <h2>Cat Mood Changer</h2>
+      <select id="moodSelector">
+        <option value="happy">Happy</option>
+        <option value="grumpy">Grumpy</option>
+        <option value="curious">Curious</option>
+      </select>
+      <div class="mood-display">
+        <img id="moodImage" src="https://placekitten.com/200/200" alt="Cat mood" />
+        <p id="moodText">Mood: Happy</p>
+      </div>
+    </section>
+
+    <!-- Cat Fact Generator -->
+    <section>
+      <h2>Random Cat Fact</h2>
+      <button id="factBtn">Get a Cat Fact</button>
+      <p id="catFact">Click the button to get a fact!</p>
+    </section>
+  </main>
+
+  <script src="script-intermediate-js.js"></script>
+</body>
+</html>

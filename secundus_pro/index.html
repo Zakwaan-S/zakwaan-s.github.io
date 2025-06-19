@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Secundus: Full-Stack Challenge</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://kit.fontawesome.com/a2e0fc2b34.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header class="navbar">
+    <div class="navbar-content">
+      <h1 class="logo">Secundus Project: Zakwaan</h1>
+      <button class="mode-toggle" onclick="toggleDarkMode()">
+        <i class="fas fa-moon"></i> 
+      </button>
+    </div>
+  </header>
+
+  <section class="hero">
+    <h2>
+      Is it realistic for a complete beginner to earn money through building a
+      full-stack web application using only free resources?
+    </h2>
+    <p>This is my journey to find out — documented in real-time.</p>
+  </section>
+
+  <main class="container">
+    <!-- New Project Categories Section -->
+    <section class="project-categories">
+      <h3><i class="fas fa-code"></i> Project Categories</h3>
+
+      <div class="category">
+        <button class="category-btn" onclick="toggleDropdown(this)">
+          HTML <i class="fas fa-chevron-down arrow"></i>
+        </button>
+        <ul class="dropdown-list">
+          <li><a href="./projects/HteeML/project1.html">Beginner HTML</a></li>
+          <li><a href="./projects/HteeML/project2.html">Intermediate HTML</a></li>
+          <li><a href="./projects/HteeML/project3.html">Advanced HTML</a></li>
+        </ul>
+      </div>
+
+      <div class="category">
+        <button class="category-btn" onclick="toggleDropdown(this)">
+          CSS <i class="fas fa-chevron-down arrow"></i>
+        </button>
+        <ul class="dropdown-list">
+          <li><a href="./projects/SeaSS/Project1/index.html">Beginner CSS</a></li>
+          <li><a href="./projects/SeaSS/Project2/index.html">Intermediate CSS</a></li>
+          <li><a href="./projects/SeaSS/Project3/index.html">Advanced CSS</a></li>
+        </ul>
+      </div>
+
+      <div class="category">
+        <button class="category-btn" onclick="toggleDropdown(this)">
+          JavaScript <i class="fas fa-chevron-down arrow"></i>
+        </button>
+        <ul class="dropdown-list">
+          <li><a href="./projects/Javascript/Project1/index.html">Beginner JavaScript</a></li>
+          <li><a href="./projects/Javascript/Project2/index.html">Intermediate JavaScript</a></li>
+          <li><a href="./projects/Javascript/Project3/index.html">Advanced JavaScript</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="roadmap">
+      <h3><i class="fas fa-map"></i> Roadmap</h3>
+      <ul>
+        <li>Learn beginner HTML/CSS</li>
+        <li>Learn beginner JavaScript</li>
+        <li>Improve HTML, CSS and JavaScript</li>
+        <li>Build a simple full-stack webpage</li>
+        <li>Search for freelance jobs</li>
+        <li>Hopefully make money???</li>
+      </ul>
+    </section>
+
+    <section class="resources">
+      <h3><i class="fas fa-book"></i> Resources Used</h3>
+      <ul>
+        <li><strong>Webpage:</strong> FreeCodeCamp, MDN, Youtube Tutorials</li>
+        <li><strong>Deployment:</strong> GitHub Pages</li>
+      </ul>
+    </section>
+
+    <section class="logs">
+      <h3><i class="fas fa-pen"></i> Project Diary</h3>
+      <article>
+        <h4>Week 1: Learning HTML</h4>
+        <p>Started with a Youtube Tutorial. Built my first webpage. It felt awesome!!.</p>
+      </article>
+      <article>
+        <h4>Week 2: Connected a CSS File</h4>
+        <p>Used a freecodecamp course to figure out how to connect CSS files to a HTML file, crazy stuff</p>
+      </article>
+      <article>
+        <h4>Week 3: Improved HTML AND CSS</h4>
+        <p>Very productive week! I actually learnt how to make good-looking websites using ONLY CSS and also improved quite a bit in my HTML!</p>
+      </article>
+      <article>
+        <h4>Week 4: Started Javascript...</h4>
+        <p>It's hard... The formatting is so different and is kinda hard to understand. But I'll push through it</p>
+      </article>
+      <article>
+        <h4>Week 5: "Intermediate" CSS</h4>
+        <p>Again, using freecodecamp i learnt what a DOM is and learnt a level of JavaScript that i consider intermediate</p>
+      </article>
+      <article>
+        <h4>Week 6-7: Break</h4>
+        <p>Lots of tests so I took a break for two weeks</p>
+      </article>
+      <article>
+        <h4>Week 8: Refreshing on everything!</h4>
+        <p>This week I didnt learn anything new, I just revisited old videos and made sure I understood everything. Also the 2 week break made me have to refresh on most things</p>
+      </article>
+      <article>
+        <h4>Week 9: Advanced HTML and CSS</h4>
+        <p>Took a break from javascript and really enjoyed coding advanced html and javascript pages because they are much easier :]</p>
+      </article>
+      <article>
+        <h4>Week 10: Advanced JavaScript</h4>
+        <p>Using Youtube Tutorials... way too hard!!</p>
+      </article>
+      <article>
+        <h4>Week 11: Advanced JavaScript</h4>
+        <p>Continuing to work on my Javascript skills </p>
+      </article>
+      <article>
+        <h4>Week 12-14: Refresher</h4>
+        <p>Refreshing on EVERYTHING to truly understand concepts</p>
+      </article>
+      <article>
+        <h4>Week 15+: Job Hunting</h4>
+        <p>After finally "understanding" HTML, CSS and JavaScript to a decent level, I am now going to start looking for jobs on freelance websites, hopefully can find something nice</p>
+      </article>
+    </section>
+
+    <section class="reflections">
+      <h3><i class="fas fa-lightbulb"></i> Lessons & Reflections</h3>
+      <ul>
+        <li>Motivation is hardest when there is no feedback</li>
+        <li>Free tools are powerful, but scattered</li>
+        <li>Time &gt; Tools [consistency matters most]</li>
+      </ul>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
