@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Advanced HTML Project</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="navbar">
+    <h1>Advanced HTML Showcase</h1>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="#form">Form</a></li>
+        <li><a href="#media">Media</a></li>
+        <li><a href="#table">Table</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section>
+      <h2>Semantic Structure & Accessibility</h2>
+      <article>
+        <h3>ARIA Roles Example</h3>
+        <p role="note">This section uses ARIA roles to improve screen reader support.</p>
+      </article>
+    </section>
+
+    <section id="form">
+      <h2>Form with Fieldset and Validation</h2>
+      <form>
+        <fieldset>
+          <legend>User Info</legend>
+          <label for="name">Name:</label>
+          <input id="name" name="name" required /><br />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required /><br />
+
+          <label for="age">Age:</label>
+          <input type="number" id="age" name="age" min="0" max="120" />
+        </fieldset>
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+
+    <section id="media">
+      <h2>Embedded Media</h2>
+      <figure>
+        <video width="320" controls>
+          <source src="example.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <figcaption>A sample embedded video using HTML5.</figcaption>
+      </figure>
+
+      <iframe src="https://www.example.com" title="Example Site" width="400" height="200"></iframe>
+    </section>
+
+    <section id="table">
+      <h2>Accessible Table</h2>
+      <table>
+        <caption>Monthly Progress</caption>
+        <thead>
+          <tr>
+            <th>Month</th>
+            <th>Tasks Completed</th>
+            <th>XP Gained</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>January</td>
+            <td>14</td>
+            <td>1200</td>
+          </tr>
+          <tr>
+            <td>February</td>
+            <td>20</td>
+            <td>1800</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td>Total</td>
+            <td>34</td>
+            <td>3000</td>
+          </tr>
+        </tfoot>
+      </table>
+    </section>
+
+    <section>
+      <h2>Custom Data Attributes</h2>
+      <div data-level="5" data-xp="1350">
+        <p>This section represents a user profile with custom data attributes for JavaScript use.</p>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

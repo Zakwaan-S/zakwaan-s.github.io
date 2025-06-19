@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Beginner JavaScript Showcase</title>
+  <link rel="stylesheet" href="style-beginner-js.css" />
+</head>
+<body>
+  <header>
+    <h1>Beginner JavaScript Project</h1>
+    <p>Simple examples using buttons, DOM interaction, and event listeners</p>
+  </header>
+
+  <main>
+    <section class="interactive">
+      <h2>Click Counter</h2>
+      <button id="countButton">Click me!</button>
+      <p>You clicked <span id="clickCount">0</span> times.</p>
+    </section>
+
+    <section class="interactive">
+      <h2>Change Background</h2>
+      <button onclick="changeBackground()">Change Background Color</button>
+    </section>
+
+    <section class="interactive">
+      <h2>Input Greeting</h2>
+      <input type="text" id="nameInput" placeholder="Enter your name" />
+      <button onclick="greetUser()">Greet</button>
+      <p id="greeting"></p>
+    </section>
+  </main>
+  <script src="script-beginner-js.js"></script>
+</body>
+</html>

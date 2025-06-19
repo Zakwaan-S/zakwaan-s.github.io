@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aurora Weather Portal</title>
+  <link rel="stylesheet" href="style-advanced-js.css" />
+</head>
+<body>
+  <div class="theme-toggle">
+    <button id="toggleTheme">Toggle Theme</button>
+  </div>
+
+  <header class="hero">
+    <h1>Aurora Weather</h1>
+    <p>Real-time weather and animated forecasts</p>
+  </header>
+
+  <main>
+    <section class="weather-search">
+      <input type="text" id="cityInput" placeholder="Enter city" />
+      <button id="getWeather">Get Weather</button>
+    </section>
+
+    <section class="weather-display" id="weatherDisplay">
+      <!-- Weather results rendered by JS -->
+    </section>
+
+    <section class="forecast">
+      <h2>3-Day Forecast</h2>
+      <div class="forecast-grid" id="forecastGrid">
+        <!-- Forecast cards rendered by JS -->
+      </div>
+    </section>
+  </main>
+
+  <canvas id="bgAnimation"></canvas>
+
+  <script src="script-advanced-js.js"></script>
+</body>
+</html>
